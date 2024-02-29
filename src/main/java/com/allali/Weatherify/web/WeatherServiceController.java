@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeatherServiceController {
     private final WeatherService weatherService ;
 
-    @GetMapping("/weather/{lat}/{lon}")
-    public WeatherData getWeatherData(@PathVariable("lat") Long lat, @PathVariable("lon") Long lon) {
-        return weatherService.getWeatherData(lat, lon);
+    @GetMapping("/weather/{cityName}")
+    public WeatherData getWeatherData(@PathVariable("cityName") String cityName) {
+        return weatherService.getWeatherData(cityName);
     }
 }
