@@ -10,14 +10,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Builder
 public class WebClientConfig {
     @Bean
-    public WebClient webClient(){
-
-        WebClient webClient = WebClient.builder()
-                .baseUrl("http://localhost:3000")
-                .defaultCookie("cookie-name", "cookie-value")
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-                .build();
-        return webClient ;
+    public WebClient.Builder webClientBuilder() {
+        return WebClient.builder();
     }
 
 }
