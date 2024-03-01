@@ -1,5 +1,12 @@
-package com.allali.Weatherify.dtos;
+package com.allali.Weatherify.dtos.weatherData;
 
+import com.allali.Weatherify.dtos.Sys;
+import com.allali.Weatherify.dtos.Weather;
+import com.allali.Weatherify.dtos.Wind;
+import com.allali.Weatherify.dtos.weatherData.Clouds;
+import com.allali.Weatherify.dtos.weatherData.Coord;
+import com.allali.Weatherify.dtos.weatherData.Main;
+import com.allali.Weatherify.dtos.weatherData.Rain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 

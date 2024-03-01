@@ -1,4 +1,4 @@
-package com.allali.Weatherify.dtos;
+package com.allali.Weatherify.dtos.weatherData;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
